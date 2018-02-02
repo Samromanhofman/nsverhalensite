@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>NS verhalen</title>
+    <link rel="stylesheet" href="css/styles.css" /> </head>
+
+<body>
+    <header>
+        <nav class="abc">
+            <a href="index.html"><img class="logo" src="image/icon/nslogo.svg" alt="NS logo">
+            </a>
+            <ul>
+                <li><a href="favorieten.html"><img src="image/icon/favorieten.svg" alt="favorieten"></a>
+                    <div class="plusone">1</div>
+                </li>
+                <li><a href="login.html"><img src="image/icon/account.svg" alt="login"></a></li>
+                <li class="search">
+                    <input class="searchbar" type="text">
+                    <img class="searchbutton" src="image/icon/zoek.svg" alt="zoeken"></li>
+            </ul>
+        </nav>
+    </header>
+    <form id="accountaanmaken" action="index.html">
+        <div>
+            <h1>Account aanmaken</h1>
+        </div>
+        <div>
+            <p>Vul de volgende gegevens in om uw NS-account aan te maken.</p>
+        </div>
+        <fieldset>
+            <legend>Personalia</legend>
+            <div>
+                <label for="voornaam">Voornaam</label>
+                <input type="text" name="voornaam" id="voornaam" required>
+            </div>
+            <div>
+                <label for="achternaam">Achternaam</label>
+                <input type="text" name="achternaam" id="achternaam" required>
+            </div>
+            <div class="radiobuttons">
+                <label for="vrouw">Vrouw</label>
+                <input type="radio" name="gender" value="female" id="vrouw" checked required>
+            </div>
+            <div>
+                <label for="man">Man</label>
+                <input type="radio" name="gender" value="male" id="man" required>
+            </div>
+            <div>
+                <label for="birthday">Geboortedatum</label>
+                <input type="date" name="birthday" id="birthday" required>
+            </div>
+            <div>
+                <label for="mobiel">Mobiele nummer</label>
+                <input type="tel" name="mobiel" placeholder="06 - " id="mobiel" required>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Inloggegevens</legend>
+            <div>
+                <label for="email1">E-mailadres</label>
+                <input type="email" name="email" id="email1" placeholder="henk123@gmail.com" required>
+            </div>
+            <div>
+                <label for="password1">Wachtwoord</label>
+                <input type="password" name="wachtwoord" id="password1" placeholder="min. 6 tekens" required>
+            </div>
+            <div>
+                <label for="password2">Bevestig wachtwoord</label>
+                <input type="password" name="bevestigwachtwoord" id="password2" placeholder="min. 6 tekens" required>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Voorwaarden</legend>
+            <label class="checkbox"><input type="checkbox" name="checkbox">Ik ga akkoord met de <a href="voorwaarden.html" id="voorwaarden">voorwaarden.</a></label>
+        </fieldset>
+
+        <div class="annulerengroep">
+            <div class="annuleren">
+                <a href="cancel" class="cancel">Annuleren</a>
+            </div>
+            <input type="submit" value="Aanmaken">
+        </div>
+
+    </form>
+
+    <footer>
+        <div>
+            <ul>
+                <li> <a href="gebruikersvoowaarden.html">Gebruikersvoorwaarden</a></li>
+                <li> <a href="privacybeleid.html">Privacybeleid</a></li>
+                <li> <a href="ondersteuning">Ondersteuning</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
